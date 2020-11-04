@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "walmart/configurations/es6-node",
+    "plugin:import/errors"
+  ],
+   "plugins": [
+    "filenames"
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "curly": ["error", "multi-line"],
+    "import/default": "off",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "import/no-unassigned-import": "error",
+    "import/order": ["error", {"newlines-between": "always"}],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "new-cap": 0,
+    "max-params": ["error", 50],
+    "no-console": "error",
+    "object-curly-spacing": ["error", "always"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"],
+    "max-nested-callbacks": [0, 10],
+    "max-depth": [0, 10],
+    "valid-jsdoc": ["error"],
+    "no-shadow" : "off",
+    "max-len": ["error", {"code": 500, "ignoreStrings": true, "ignoreUrls": true}],
+    "consistent-return" : "off",
+    "filenames/match-regex": [2, "^[a-z_-]+$", true],
+    "func-style":"off",
+    "max-statements":"off"
+  }
+}
