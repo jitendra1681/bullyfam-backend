@@ -3,7 +3,7 @@
  * all generated template ids are includes in "templateIds" arrays in below settings
 **/
 const sendgrid = {
-  apiKey: process.env.SEND_GRID || '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',
+  apiKey: process.env.SEND_GRID || '',
   senderEmail: process.env.SENDER_EMAIL || 'vow@ringconcierge.com',
   senderEmailInfo: 'info@ringconcierge.com',
 
